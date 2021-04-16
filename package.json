@@ -1,5 +1,5 @@
 {
-  "name": "01-github-explorer",
+  "name": "desafio1",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -40,5 +40,7 @@
     "webpack": "^5.17.0",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "repository": "https://github.com/joaohitallo/ignite-react-desafio1.git",
+  "author": "joaohitallo <joaohitallo97@gmail.com>"
 }
