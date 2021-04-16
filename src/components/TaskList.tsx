@@ -31,7 +31,7 @@ export function TaskList() {
     const newTasks = tasks.map(task => task.id == id ? {  // Pega a task com id igual, acessa ela e muda o isComplete para false,
       ...task,                                            // caso o id seja diferente ele retorna a task sem mudanças.
       isComplete: !task.isComplete
-    }: task )
+    }: task )                                             // ***** testar uso do Array.prototype.flatMap()
 
     setTasks(newTasks)                                      // atualiza as tasks
   }
@@ -39,7 +39,7 @@ export function TaskList() {
   function handleRemoveTask(id: number) {
     const taskfilter = tasks.filter(task => task.id != id); // Filtra as tasks com id diferente da que foi removida e adc a taskfilter
                                                             // que são todas as tasks menos a task removida
-    setTasks(taskfilter);
+    setTasks(taskfilter);                                   // ***** testar uso do Array.prototype.flatMap()
   }
 
   return (
